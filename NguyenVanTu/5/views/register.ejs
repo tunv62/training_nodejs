@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/head'); -%>
+
+<body>
+  <!-- Navigation -->
+  <%- include('layouts/navbar')-%>
+
+  <header class="masthead" style="background-image: url('/upload/11.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>register account</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h3>register account</h3> 
+        <form action="/user/store" method="POST" enctype="multipart/form-data">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>user name</label>
+              <input type="text" class="form-control" placeholder="user name" id="username" name="username" >
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>pass word</label>
+              <input type="password" class="form-control" placeholder="pass word" id="password" name="password">
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary" id="sendRegisterAccount">Register</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <!-- Footer -->
+  <%- include('layouts/footer')-%>
+
+  <!-- Bootstrap core JavaScript -->
+  <%- include('layouts/scripts')-%>
+
+</body>
+
+</html>
