@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/head'); -%>
+
+<body>
+  <!-- Navigation -->
+  <%- include('layouts/navbar')-%>
+
+  <header class="masthead" style="background-image: url('/upload/11.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Album</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Album example</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
+        etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+      </p>
+    </div>
+  </section>
+  <!-- Main Content -->
+  <main role="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
+          etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row">
+            <% for(var i = 0; i < post.lenght; i++){ %>
+
+            <% } %>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <hr>
+  <!-- Footer -->
+  <%- include('layouts/footer')-%>
+
+  <!-- Bootstrap core JavaScript -->
+  <%- include('layouts/scripts')-%>
+
+</body>
+
+</html>
